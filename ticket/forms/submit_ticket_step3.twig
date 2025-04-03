@@ -70,6 +70,10 @@
 
         <hr />
 
+        {% include 'frontend.' ~ template ~ '.forms.custom_fields' with {'new': true} %}
+
+        <hr />
+
         <div class="sp-form-row sp-form-full">
             {{ form_label('subject', Lang.get('ticket.subject')) }}
             <div class="sp-input-container">
